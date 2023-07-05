@@ -1,6 +1,7 @@
 import requests
 
-API_ENDPOINT = 'http://localhost:5000/chat'
+API_ENDPOINT = 'https://flask-production-e09a.up.railway.app/chat'
+# API_ENDPOINT = 'http://localhost:5000/chat'
 
 def send_message(message):
     data = {'message': message}
@@ -8,8 +9,8 @@ def send_message(message):
     return response.json()['response']
 
 while True:
-    user_input = input('👨‍🦰 You: ')
+    user_input = input('👨‍🦰 Kamu: ')
     response = send_message(user_input)
-    print('🤖 ChatbotX:', response)
-    if response == 'Goodbye':
+    print('🤖 WasteBot:', response, '\n')
+    if user_input == 'quit':
         break

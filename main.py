@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import numpy as np
 import pickle, os, random, string
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -7,15 +7,16 @@ app = Flask(__name__)
 
 # Define your model and tokenizer here
 from keras.models import load_model
-chatbot_model = load_model('model.h5')
-tokenizer = pickle.load(open('tokenizer.pkl','rb'))
-max_sequence_length = pickle.load(open('max_sequence_length.pkl','rb'))
-le = pickle.load(open('le.pkl','rb'))
-responses = pickle.load(open('responses.pkl','rb'))
+chatbot_model = load_model('Model/model.h5')
+tokenizer = pickle.load(open('Model/tokenizer.pkl','rb'))
+max_sequence_length = pickle.load(open('Model/max_sequence_length.pkl','rb'))
+le = pickle.load(open('Model/le.pkl','rb'))
+responses = pickle.load(open('Model/responses.pkl','rb'))
 
 @app.route('/')
 def home():
-    return "hey"
+    return render_template("index.html")
+    # return "hey"
 
 @app.route('/chat', methods=['POST'])
 def chat():
