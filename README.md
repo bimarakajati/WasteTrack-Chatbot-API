@@ -1,23 +1,33 @@
----
-title: Flask
-description: A popular minimal server framework for Python
-tags:
-  - python
-  - flask
----
+# Flask WasteTrack Chatbot
 
-# Python Flask Example
+This project is a simple chatbot implemented using Flask, Python, and a pre-trained model. The chatbot interacts with users, processes their input, and generates appropriate responses based on the trained model.
 
-This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a simple JSON response.
+## ✨ Prerequisites
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/zUcpux)
-
-## ✨ Features
-
-- Python
+- Python 3.x
 - Flask
+- TensorFlow (or Keras)
+- NLTK
+- Numpy
 
-## 💁‍♀️ How to use
+## 🤖 Installation
 
-- Install Python requirements `pip install -r requirements.txt`
-- Start the server for development `python3 main.py`
+1. Clone the repository:
+   ```shell
+   git clone https://github.com/bimarakajati/WasteTrack-Chatbot-API.git
+   ```
+
+2. Install the required dependencies:
+    ```shell
+    pip install -r requirements.txt
+    ```
+
+## 💁‍ Usage
+
+1. Run the Flask app:
+   ```shell
+   python main.py
+   ```
+2. Open your web browser and navigate to http://localhost:5000 to access the chat interface.
+3. Start chatting with the chatbot by entering your messages in the input field and pressing Enter.
+4. The chatbot will respond with generated replies based on the pre-trained model's predictions.

@@ -18,18 +18,18 @@
         "bro",
         "sis",
         "kawan",
-        "chatbotx"
+        "WasteBot"
       ],
       "responses": [
-        "Halo! Saya Chatbotx, salam kenal ya! silahkan berikan pertanyaan yang mau kamu tanyakan kepada chatbotx ya :) ",
-        "Helo! Ini Chatbotx. silahkan berikan pertanyaan yang mau kamu tanyakan kepada chatbotx ya :)"
+        "Halo! Saya WasteBot, salam kenal ya! silahkan berikan pertanyaan yang mau kamu tanyakan kepada WasteBot ya :) ",
+        "Helo! Ini WasteBot. silahkan berikan pertanyaan yang mau kamu tanyakan kepada WasteBot ya :)"
       ]
     },
     {
-      "tag": "ChatbotX",
+      "tag": "WasteBot",
       "patterns": [
-        "Apa itu ChatbotX?",
-        "Siapa ChatbotX?",
+        "Apa itu WasteBot?",
+        "Siapa WasteBot?",
         "Ini apa sih?",
         "Ini apa?",
         "Aplikasi apa ini?",
@@ -37,20 +37,20 @@
         "Kamu siapa?"
       ],
       "responses": [
-        "ChatbotX adalah aplikasi chatbot informasi tentang pengolahan limbah sampah.",
-        "ChatbotX merupakan teman bantu kamu dalam mengetahui segala sesuatu yang berhubungan dengan pengolahan limbah sampah."
+        "WasteBot adalah aplikasi chatbot informasi tentang pengolahan limbah sampah.",
+        "WasteBot merupakan teman bantu kamu dalam mengetahui segala sesuatu yang berhubungan dengan pengolahan limbah sampah."
       ]
     },
     {
-      "tag": "pencipta_chatbotx",
+      "tag": "pencipta_WasteBot",
       "patterns": [
         "Siapa pembuatmu?",
         "Yang buat kamu siapa sih?",
         "Siapa penciptamu?"
       ],
       "responses": [
-        "ChatbotX diciptakan oleh mahasiswa dan mahasiswi dari program KKI di Center Of Excellence UDINUS dari tim sampah.",
-        "Pembuat ChatbotX dari Mahasiswa magang di CoE Udinus Semarang!"
+        "WasteBot diciptakan oleh mahasiswa dan mahasiswi dari program KKI di Center Of Excellence UDINUS dari tim sampah.",
+        "Pembuat WasteBot dari Mahasiswa magang di CoE Udinus Semarang!"
       ]
     },
     {
