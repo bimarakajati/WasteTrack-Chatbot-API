@@ -7,8 +7,9 @@ This project is a simple chatbot implemented using Flask, Python, and a pre-trai
 - Python 3.x
 - Flask
 - TensorFlow (or Keras)
+- scikit-learn
 - NLTK
-- Numpy
+- NumPy
 
 ## 🤖 Installation
 
