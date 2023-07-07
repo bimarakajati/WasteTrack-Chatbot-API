@@ -1,20 +1,21 @@
-from flask import Flask, request, jsonify
 import numpy as np
-import joblib, os, random, string
+import pickle, os, random, string
+from keras.models import load_model
+from flask import Flask, render_template, request
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 app = Flask(__name__)
 
 # Define your model and tokenizer here
-chatbot_model = joblib.load('Model/chatbot_model.pkl')
-tokenizer = joblib.load('Model/tokenizer.pkl')
-max_sequence_length = joblib.load('Model/max_sequence_length.pkl')
-le = joblib.load('Model/le.pkl')
-responses = joblib.load('Model/responses.pkl')
+chatbot_model = load_model('model/model.h5')
+tokenizer = pickle.load(open('model/tokenizer.pkl','rb'))
+max_sequence_length = pickle.load(open('model/max_sequence_length.pkl','rb'))
+le = pickle.load(open('model/le.pkl','rb'))
+responses = pickle.load(open('model/responses.pkl','rb'))
 
 @app.route('/')
 def home():
-    return jsonify({"Choo Choo": "Welcome to WasteTrack+ Flask app 🚅"})
+    return render_template("index.html")
 
 @app.route('/chat', methods=['POST'])
 def chat():
