@@ -1,7 +1,7 @@
 import requests
 
-API_ENDPOINT = 'https://flask-production-e09a.up.railway.app/chat'
-# API_ENDPOINT = 'http://localhost:5000/chat'
+# API_ENDPOINT = 'https://flask-production-e09a.up.railway.app/chat'
+API_ENDPOINT = 'http://localhost:5000/chat'
 
 def send_message(message):
     data = {'message': message}
