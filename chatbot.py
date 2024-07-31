@@ -1,6 +1,10 @@
+# This is a simple chatbot 
+# that interacts with the WasteBot API 
+# after running the Flask server.
+
 import requests
 
-# API_ENDPOINT = 'https://flask-production-e09a.up.railway.app/chat'
+# API_ENDPOINT = 'https://wastebot.up.railway.app/chat'
 API_ENDPOINT = 'http://localhost:5000/chat'
 
 def send_message(message):
