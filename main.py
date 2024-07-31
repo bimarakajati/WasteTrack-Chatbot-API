@@ -1,5 +1,5 @@
 import numpy as np
-import pickle, os, random, string
+import pickle, random, string
 from keras.models import load_model
 from flask import Flask, render_template, request
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -43,4 +43,4 @@ def chat():
     return {'response': response}
 
 if __name__ == '__main__':
-    app.run(port=os.getenv("PORT", default=5000))
+    app.run(host='0.0.0.0', port=5000)
